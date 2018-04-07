@@ -122,6 +122,10 @@ main {
   width: 100%;
 }
 
+.sidebar-about-us .sidebar-faqs {
+  display: none;
+}
+
 /* Feed Section =========================== */
 .feed {
   width: 100%;
@@ -154,10 +158,6 @@ footer {
   width: 47.5%;
   margin: auto;
 }
-
-
-
-
 
 
 
@@ -252,16 +252,86 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
+   @media only screen and (min-width:768px) {
+   /*Tablet styles here*/
+   }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
+/* Header =========================== */
+   .main-header {
+     width: 100%;
+     margin: auto;
+     padding: 0 3%;
+   }
+
+   .main-header .header-wrapper {
+     width: 94%;
+     max-width: 960px;
+     padding: 0 3%;
+   }
+
+   .logo {
+     width 40%;
+     float: left;
+   }
+
+   nav {
+     width: 60%;
+     float: left;
+   }
+
+/* Main Content =========================== */
+   .top-story {
+     width: 100%;
+   }
+
+   top-img {
+     width: 57%;
+     float: left;
+     padding-right: 3%;
+   }
+
+/* Featured News Item =========================== */
+   .top-info {
+     width: 40%;
+     float: left;
+   }
+
+/* Sidebar =========================== */
+   .sidebar {
+     clear: both;
+     width: 37%;
+     float: right;
+   }
+
+   .sidebar-about-us .sidebar-faqs {
+     display: block;
+   }
+
+/* Feed Section =========================== */
+   .feed {
+     width: 60%;
+     float: left;
+   }
+
+   .feed-img {
+     width: 35%;
+   }
+
+   .feed-info {
+     width: 57%;
+   }
+
+/* Footer =========================== */
+   .footer-logo {
+     width: 30%;
+     margin: auto;
+   }
+
+/* Featured News Item =========================== */
+
+   @media only screen and (min-width:940px) {
+   /*Desktop styles here*/
+   }
 
 /* ==========================================================================
    Print styles.
