@@ -100,7 +100,7 @@ body, html {
   font-family: 'Source Sans Pro', sans-serif;
   color: #222;
   font-size: 16px;
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 
 a {
@@ -150,6 +150,10 @@ figure {
   display: block;
 }
 
+.btn i {
+  padding-right: 10px;
+}
+
 input.btn {
   background-color: #ff1256;
 }
@@ -170,11 +174,15 @@ input.btn {
      margin: 0 auto;
    }
 
+   .logo img {
+     width: 100%;
+   }
+
    nav {
      width: 100%;
    }
 
-   ul {
+   nav ul {
      list-style: none;
      padding: 0;
    }
@@ -191,12 +199,17 @@ input.btn {
      color: #333;
    }
 
+   nav i {
+     padding-right: 10px;
+   }
+
    /* Main Content =========================== */
    main {
      width: 96%;
      padding: 0 2%;
      margin: auto;
      clear: both;
+     max-width: 960px;
    }
 
    /* Featured News Item =========================== */
@@ -209,6 +222,10 @@ input.btn {
    .top-img {
      width: 100%;
      margin: 0;
+   }
+
+   .top-img img {
+     width: 100%;
    }
 
    /* Side Bar =========================== */
@@ -232,7 +249,8 @@ input.btn {
      padding: 5px 0;
    }
 
-   .sidebar-about-us, .sidebar-faqs {
+   .sidebar-about-us,
+   .sidebar-faqs {
       display: none;
    }
 
@@ -279,15 +297,87 @@ input.btn {
      padding-top: 30px;
    }
 
-   .team-member p {
+   .contact-info ul {
+     list-style: none;
+     padding: 0;
+   }
+
+   .contact-info ul li {
+     display: inline-block;
+     vertical-align: top;
+   }
+
+   .map-container {
+     position: relative;
+     padding-bottom: 75%;
+     height: 0;
+     overflow: hidden;
+   }
+
+   .map-container iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+   }
+
+   .strong {
+     font-weight: 700;
+   }
+
+   .mission {
+     width: 100%;
+   }
+
+   .team-member {
+     padding: 15px 0;
+     clear: both;
+   }
+
+   .team-img {
+      width: 40%;
+      padding-bottom: 40%;
+      float: left;
+      margin-right: 20px;
+      border: 1px solid #ccc;
+   }
+
+   .team-name {
+     margin-bottom: 0;
+   }
+
+   .team-title {
+     margin-top: 0;
+   }
+
+   .team-description {
      display: none;
+   }
+
+   #team-img-jack {
+      background: url('../img/team-jack.png') center no-repeat;
+      background-size: cover;
+   }
+
+   #team-img-lana {
+      background: url('../img/team-lana.png') center no-repeat;
+      background-size: cover;
+   }
+
+   #team-img-willow {
+      background: url('../img/team-willow.png') center no-repeat;
+      background-size: cover;
    }
 
    /* FAQs PAGE ================================ */
 
    .faqs-item {
      border-bottom: 1px solid #ccc;
-     padding-bottom: 15px;
+   }
+
+   .faqs-item h3 {
+     font-weight: 400;
    }
 
 
@@ -406,6 +496,7 @@ input.btn {
       width: 100%;
       margin: auto;
       padding: 0 3%;
+      background-color: #dddddd;
     }
 
     .main-header .header-wrapper {
@@ -419,14 +510,33 @@ input.btn {
       float: left;
     }
 
+    .logo img {
+      max-width: 312px;
+    }
+
     nav {
       width: 60%;
       float: left;
     }
 
+    nav ul {
+      margin: 0;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      padding: 0 2%;
+      border: none;
+      position: relative;
+    }
+
     /* Featured News Item =========================== */
     .top-story {
       width: 100%;
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
 
     .top-img {
@@ -449,24 +559,31 @@ input.btn {
 
     .sidebar-about-us, .sidebar-faqs {
       display: block;
+      border-bottom: 1px solid #ccc;
+      padding: 0 10px 20px 10px;
     }
 
     /* News Feed Section =========================== */
     .feed {
       width: 60%;
       float: left;
+      border-right: 1px solid #ccc;
+    }
+
+    .feed h2 {
+      font-size: 1.125em;
     }
 
     .feed-img {
       width: 35%;
     }
 
-    .feed-info {
-      width: 57%;
+    .feed-item {
+      padding-right: 20px;
     }
 
-    .feed-item p {
-      display: none;
+    .feed-info {
+      width: 57%;
     }
 
     /* ABOUT PAGE ================================ */
@@ -475,29 +592,93 @@ input.btn {
       float: left;
     }
 
+    .map-container {
+      position: relative;
+      padding-bottom: 40%;
+      height: 0;
+      overflow: hidden;
+      width: 58%;
+      float: left;
+      border: 1px solid #333;
+      margin-bottom: 40px;
+      margin-top: 30px;
+    }
+
+    .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
     .mission {
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      padding: 15px 0;
       clear: both;
+    }
+
+    .team {
+      padding-top: 15px;
+    }
+
+    .team-member {
+      padding: 15px 0;
+    }
+
+    .team-img {
+      width: 20%;
+      padding-bottom: 20%;
+      margin-right: 10%;
     }
 
 
     /* Footer =========================== */
+
     .footer-logo {
       width: 30%;
       margin: auto;
     }
 
+}
 
 @media only screen and (min-width:940px) {
     /* Desktop styles here */
+
+    h1 {
+      font-size: 1.6em;
+      line-height: 1.8;
+    }
+
+    h2 {
+      font-size: 1.4em;
+    }
+
+    .main-header {
+      background-color: #dddddd;
+    }
 
     /* Featured News Item =========================== */
     .top-story {
       width: 65%;
       float: left;
+      border: none;
+      padding-right: 2%;
     }
 
     .top-img {
       width: 100%;
+      padding-bottom: 1em;
+    }
+
+    .top-img img {
+      max-width: 620px;
+    }
+
+    .top-info {
+      width: 100%;
+      float: none;
     }
 
     /* Side Bar =========================== */
@@ -505,17 +686,28 @@ input.btn {
       clear: none;
       width: 30%;
       float: right;
+      border-left: 1px solid #ccc;
     }
+
+    .sidebar-newsletter,
+    .sidebar-about-us,
+    .sidebar-faqs {
+      padding: 0 20px 20px 20px;
+    }
+
+    .sidebar-faqs {
+      border: none;
+    }
+
 
     /* News Feed Section =========================== */
     .feed {
       width: 100%;
       float: none;
       clear: both;
-    }
-
-    .feed-img {
-      width: 20%;
+      padding-left: 20px;
+      border-top: 1px solid #ccc;
+      border-right: none;
     }
 
     .feed p {
@@ -523,11 +715,31 @@ input.btn {
       margin-top: 0;
     }
 
+    .feed h2 {
+      margin: 0;
+    }
+
+    .feed-img {
+      width: 20%;
+    }
+
     /* ABOUT PAGE ================================ */
-    .team-member p {
-      display: block;
+    .team-member {
+      padding: 15px 0;
+    }
+
+    .team-img {
+      margin-right: 5%;
+    }
+
+    .team-name {
       margin-top: 0;
     }
+
+    .team-description {
+      display: block;
+    }
+
 
     /* Footer =========================== */
     .footer-logo {
